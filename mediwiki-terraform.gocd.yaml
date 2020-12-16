@@ -16,4 +16,7 @@ pipelines:
             TerraformPlan: # name of the job
               tasks:
                - exec: # indicates type of task
-                   command: cd terraform ; terraform init ; terraform plan
+                   command: |
+                     cd terraform
+                     terraform init
+                     terraform plan
